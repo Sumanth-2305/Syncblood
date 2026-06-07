@@ -1,0 +1,154 @@
+.landing-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.5rem;
+  background: radial-gradient(ellipse at top, #1a0a0a 0%, var(--bg-slate) 60%);
+}
+
+.landing-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.landing-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--primary-red-light);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.landing-tagline {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.landing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.portal-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.portal-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-red);
+}
+
+.portal-card-featured {
+  border-color: var(--primary-red);
+  box-shadow: 0 0 30px rgba(198, 40, 40, 0.15);
+}
+
+.portal-card-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donor-icon {
+  background: rgba(198, 40, 40, 0.15);
+  color: var(--primary-red-light);
+}
+
+.hospital-icon {
+  background: rgba(198, 40, 40, 0.2);
+  color: var(--primary-red-light);
+}
+
+.admin-icon {
+  background: rgba(136, 153, 170, 0.15);
+  color: var(--text-muted);
+}
+
+.portal-card h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.portal-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.portal-card-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: none;
+  text-align: center;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--primary-red);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-red-hover);
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-dark);
+  border: 1px solid var(--border-color);
+}
+
+.btn-outline:hover {
+  border-color: var(--primary-red-light);
+  color: var(--primary-red-light);
+}
+
+.landing-footer {
+  margin-top: auto;
+  padding-top: 3rem;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .landing-cards {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+}

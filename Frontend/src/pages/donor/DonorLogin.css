@@ -1,0 +1,5 @@
+@import '../admin/AdminLogin.css';
+
+.donor-color {
+  color: var(--primary-red-light);
+}

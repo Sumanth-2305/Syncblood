@@ -1,0 +1,5 @@
+@import '../admin/AdminLogin.css';
+
+.hospital-color {
+  color: var(--primary-red-light);
+}
